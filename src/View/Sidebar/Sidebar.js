@@ -11,9 +11,9 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Admin_Route } from '../../Navigation/Nav';
 
-const drawerWidth = 240;
+// const drawerWidth = 240;
 
-export default function Sidebar(props: Props) {
+export default function ResponsiveDrawer(props: Props) {
     const { window } = props;
     const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -24,17 +24,19 @@ export default function Sidebar(props: Props) {
     const drawer = (
         <div>
             <div className="sara-logo p-2">
-                <img src="/assets/images/web_black.png" alt="" height={50} />
+                <img src="/assets/images/web_black.png" alt="SARA LOGO" height={50} />
             </div>
             <Divider />
             <List>
                 {Admin_Route.map((element, index) => (
                     <ListItem key={index} disablePadding>
                         <ListItemButton>
-                            <ListItemIcon>
-                                <i className={element.icon}></i>
-                            </ListItemIcon>
-                            <Link to={element.url}>{element.name}</Link>
+                            <Link to={element.url}>
+                                <ListItemIcon>
+                                    <i className={element.icon}></i>
+                                </ListItemIcon>
+                                {element.name}
+                            </Link>
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -56,7 +58,7 @@ export default function Sidebar(props: Props) {
                 }}
                 sx={{
                     display: { xs: 'block', sm: 'none' },
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width:"323px"},
                 }}
             >
                 {drawer}
@@ -65,7 +67,7 @@ export default function Sidebar(props: Props) {
                 variant="permanent"
                 sx={{
                     display: { xs: 'none', sm: 'block' },
-                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+                    '& .MuiDrawer-paper': { boxSizing: 'border-box', width:"323px"},
                 }}
                 open
             >

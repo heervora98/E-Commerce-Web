@@ -10,32 +10,38 @@ export const Admin_Final = [
     {
         name:"Home",
         path:"/admin",
-        component: Admin
+        component: Dashboard,
+        exact: true
     },
     {
         name:"Dashbord",
         path:"/admin/dashboard",
-        component: Dashboard
+        component: Dashboard,
+        exact: true
     },
     {
         name:"Product",
         path:"/admin/product",
-        component: Product
+        component: Product,
+        exact: true
     },
     {
         name:"Cateloge Upload",
         path:"/admin/product/new-product",
-        component: Cateloge
+        component: Cateloge,
+        exact: true
     },
     {
         name:"Order Details",
         path:"/admin/order-details",
-        component: Order
+        component: Order,
+        exact: true
     },
     {
         name:"Invoice",
         path:"/admin/get-invoice",
-        component: Invoice
+        component: Invoice,
+        exact: true
     },
 
 ]
