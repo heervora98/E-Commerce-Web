@@ -1,10 +1,12 @@
 import React from 'react'
-import TopNav from '../Nav/Top'
+import Slider from '../Header/Slider'
+import OfferTag from '../OfferLine'
 
 const Home = () => {
   return (
     <div className='container-fluid'>
-      <TopNav/>
+      <OfferTag/>
+      <Slider/>
     </div>
   )
 }
