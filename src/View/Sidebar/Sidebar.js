@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
     return (
-        <div className='sidebar ps-3 '>
+        <div className='sidebar ps-md-3 '>
             <div className="row">
                 <div className="sara-logo p-2 col-12">
                     <img src="/assets/images/web_black.png" alt="SARA LOGO" height={50} />

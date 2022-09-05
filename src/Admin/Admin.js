@@ -8,7 +8,7 @@ const Admin = () => {
     return (
         <div className='container-fluid'>
             <div className="row">
-                <div className="col-md-2 border-end p-0">
+                <div className="col-md-2 border-end p-0 d-none d-md-block">
                     <Sidebar/>
                 </div>
                 <div className="col-md-10 p-0">
