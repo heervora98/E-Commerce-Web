@@ -4,7 +4,7 @@ import { Carousel } from 'antd';
 const Slider = () => {
 
     const contentStyle = {
-        height: '160px',
+        height: '560px',
         color: '#fff',
         lineHeight: '160px',
         textAlign: 'center',
