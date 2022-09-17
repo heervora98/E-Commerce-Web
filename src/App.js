@@ -10,7 +10,7 @@ import Sidebar from './View/Sidebar/Sidebar'
 
 const App = () => {
 
-  const [role, setRole] = useState('admin')
+  const [role, setRole] = useState('user')
 
   const [ loader, setLoader ] = useState(false)
 
